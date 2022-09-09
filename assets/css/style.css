@@ -31,14 +31,15 @@ header h1 {
 }
 header .name-container {
   position: absolute ;
-  left: 770px ;
+  left: 710px ;
   bottom: 0 ;
   z-index: 1 ;
   height: 30px ;
   padding-left: 10px ;
   margin: 0 ;
-  font-size: 18px ;
+  font-size: 14px ;
   line-height: 30px ;
+  color: #666 ;
 }
 header .job-container {
   position: absolute ;
@@ -52,15 +53,6 @@ header .job-container {
   font-size: 14px ;
   font-weight: normal ;
   line-height: 20px ;
-}
-header .profile-picture {
-  position: absolute ;
-  right : 190px ;
-  bottom: -50px ;
-  z-index: 2 ;
-  width: 100px ;
-  height: 100px ;
-  border-radius: 50% ;
 }
 header .profile-picture img {
   width: 100px ;
@@ -102,8 +94,8 @@ header .contact-container .contact-list li span {
   position: relative ;
   top: 0 ;
   left: 0 ;
-  width: 720px ;
-  padding: 75px 0 40px ;
+  width: 600px ;
+  padding: 25px 0 40px ;
   border-right: 1px solid #ededed ;
 }
 
@@ -117,11 +109,11 @@ header .contact-container .contact-list li span {
   border-bottom: 1px solid #ededed ;
 }
 #main .resume-item h2 {
-  position: absolute ;
+  position: relative ;
   top: -10px ;
-  right: -240px ;
+  right: 50px ;
   z-index: 1 ;
-  width: 240px ;
+  width: 600px ;
   height: 30px ;
   padding: 0 30px ;
   font-size: 24px ;
@@ -130,7 +122,7 @@ header .contact-container .contact-list li span {
 }
 #main ul li {
   position: relative ;
-  margin: 0 0 30px ;
+  margin: 0 0 10px ;
 }
 
 
@@ -162,7 +154,6 @@ header .contact-container .contact-list li span {
   line-height: 16px ;
 }
 .project h3 {
-  position: relative ;
   display: inline ;
   color: #666 ;
   font-size: 16px ;
@@ -179,47 +170,66 @@ header .contact-container .contact-list li span {
   color: #999 ;
 }
 
-
-/* skill */
-.skill {
-  margin-bottom: 0!important ;
+#side {
+  position: absolute;
+  top: 160px ;
+  right: 50px ;
+  z-index: 1 ;
+  width: 330px ;
+  height: 30px ;
 }
-.skill ul li {
-  height: 15px ;
-}
-.skill h3 {
-  float: left ;
-  width: 30% ;
-  height: 100% ;
-  font-size: 14px ;
-  font-weight: normal ;
-  line-height: 14px ;
-}
-.skill .skill-bar {
-  float: left ;
-  width: 70% ;
-  height: 100% ;
-  background: #f5f5f5 ;
-}
-.skill .skill-bar .bar {
-  display: block ;
-  width: 60% ;
-  height: 100% ;
-  background: #666 ;
-}
-
-
-/* footer */
-footer {
-  position: absolute ;
-  bottom: -30px ;
+#side > .resume-item-wrapper {
+  position: relative ;
+  top: 0 ;
   left: 0 ;
-  width: 100% ;
-  padding: 0 30px ;
-  font-size: 12px ;
-  text-align: left ;
-  color: #bbb ;
+  width: 331px ;
+  padding: 25px 0 40px ;
+  border-right: 1px solid #ededed ;
 }
-footer a {
-  font-weight: bold ;
+
+#side .resume-item {
+  position: relative ;
+  padding: 0 60px ;
+  margin-bottom: 60px ;
+}
+#side .resume-item .inner {
+  padding-bottom: 30px ;
+  border-bottom: 1px solid #ededed ;
+}
+#side .resume-item h2 {
+  position: relative ;
+  top: -10px ;
+  right: 50px ;
+  z-index: 1 ;
+  width: 240px ;
+  height: 30px ;
+  padding: 0 30px ;
+  font-size: 24px ;
+  text-align: left ;
+  text-transform: capitalize ;
+}
+#side ul li {
+  position: relative ;
+  margin: 0 0 10px ;
+}
+
+/* experience */
+.education h3 {
+  font-size: 18px ;
+}
+.education .school {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.education .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.education .detail {
+  font-size: 14px ;
 }
