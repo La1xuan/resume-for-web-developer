@@ -102,7 +102,7 @@ header .contact-container .contact-list li span {
 #main .resume-item {
   position: relative ;
   padding: 0 60px ;
-  margin-bottom: 60px ;
+  margin-bottom: 25px ;
 }
 #main .resume-item .inner {
   padding-bottom: 30px ;
@@ -182,7 +182,7 @@ header .contact-container .contact-list li span {
   position: relative ;
   top: 0 ;
   left: 0 ;
-  width: 331px ;
+  width: 381px ;
   padding: 25px 0 40px ;
   border-right: 1px solid #ededed ;
 }
@@ -217,19 +217,28 @@ header .contact-container .contact-list li span {
 .education h3 {
   font-size: 18px ;
 }
-.education .school {
+.school {
   margin: 0 0 10px ;
   color: #959595 ;
   font-size: 13px ;
   font-weight: normal ;
 }
-.education .date {
+.course {
+  margin: 0 0 10px ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.date2 {
   position: absolute ;
-  top: 5px ;
-  right: 0 ;
+  top: 30px ;
+  right: -50px ;
   color: #bbb ;
   font-size: 12px ;
 }
-.education .detail {
-  font-size: 14px ;
+.detail2 {
+  font-size: 12px ;
+}
+
+.psnweb {
+  text-decoration: underline;
 }
