@@ -19,7 +19,7 @@ body {
 /* header */
 header {
   position: relative ;
-  padding: 30px ;
+  padding: 10px 20px 30px;
   border-bottom: 1px solid #ededed ;
 }
 header h1 {
@@ -102,7 +102,7 @@ header .contact-container .contact-list li span {
 #main .resume-item {
   position: relative ;
   padding: 0 60px ;
-  margin-bottom: 25px ;
+  margin-bottom: 10px ;
 }
 #main .resume-item .inner {
   padding-bottom: 30px ;
@@ -190,7 +190,7 @@ header .contact-container .contact-list li span {
 #side .resume-item {
   position: relative ;
   padding: 0 60px ;
-  margin-bottom: 60px ;
+  margin-bottom: 10px ;
 }
 #side .resume-item .inner {
   padding-bottom: 30px ;
@@ -218,7 +218,7 @@ header .contact-container .contact-list li span {
   font-size: 18px ;
 }
 .school {
-  margin: 0 0 10px ;
+  margin: 0 ;
   color: #959595 ;
   font-size: 13px ;
   font-weight: normal ;
@@ -229,9 +229,8 @@ header .contact-container .contact-list li span {
   font-weight: normal ;
 }
 .date2 {
-  position: absolute ;
-  top: 30px ;
-  right: -50px ;
+  position: relative ;
+  top: -5px ;
   color: #bbb ;
   font-size: 12px ;
 }
@@ -242,3 +241,4 @@ header .contact-container .contact-list li span {
 .psnweb {
   text-decoration: underline;
 }
+
