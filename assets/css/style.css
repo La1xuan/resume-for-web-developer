@@ -10,7 +10,7 @@ body {
 .resume-wrapper {
   position: relative ;
   width: 960px ;
-  margin: 30px auto 60px ;
+  margin: auto ;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background: #fff ;
 }
@@ -101,11 +101,11 @@ header .contact-container .contact-list li span {
 
 #main .resume-item {
   position: relative ;
-  padding: 0 60px ;
-  margin-bottom: 10px ;
+  padding: 10px 30px 5px 60px;
+  margin-bottom: 6px ;
 }
 #main .resume-item .inner {
-  padding-bottom: 30px ;
+  padding-bottom: 15px ;
   border-bottom: 1px solid #ededed ;
 }
 #main .resume-item h2 {
@@ -122,16 +122,17 @@ header .contact-container .contact-list li span {
 }
 #main ul li {
   position: relative ;
-  margin: 0 0 10px ;
+  margin: 0 2px ;
 }
 
 
 /* experience */
 .experience h3 {
+  padding-top: 15px;
   font-size: 18px ;
 }
 .experience .company {
-  margin: 0 0 10px ;
+  margin: 0 ;
   color: #959595 ;
   font-size: 13px ;
   font-weight: normal ;
@@ -147,26 +148,89 @@ header .contact-container .contact-list li span {
   font-size: 14px ;
 }
 
+/* hackathon */
+.hackathon h3 {
+  padding-top: 15px;
+  font-size: 18px ;
+}
+.hackathon .company {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.hackathon .company {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.hackathon .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.hackathon .detail {
+  font-size: 14px ;
+}
+.hackathon .tags {
+  font-size: 12px ;
+  color: #999 ;
+}
 
 /* project */
-.project ul li {
-  font-size: 0 ;
-  line-height: 16px ;
-}
 .project h3 {
-  display: inline ;
-  color: #666 ;
-  font-size: 16px ;
+  font-size: 18px ;
 }
-.project h3::after {
-  content: ' - ' ;
+.project .company {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.project .company {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.project .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
 }
 .project .detail {
-  display: inline ;
   font-size: 14px ;
 }
 .project .tags {
   font-size: 12px ;
+  color: #999 ;
+}
+
+.project ul li {
+  font-size: 0 ;
+  padding-bottom: 10px;
+  line-height: 16px ;
+}
+.project h3 {
+  margin: 0 0 10px ;
+  color: #666 ;
+  font-size: 16px ;
+}
+.project h3::after {
+  content: '' ;
+}
+.project .detail {
+
+  font-size: 14px ;
+}
+.project .tags {
+  font-size: 12px ;
+
   color: #999 ;
 }
 
@@ -193,27 +257,27 @@ header .contact-container .contact-list li span {
   margin-bottom: 10px ;
 }
 #side .resume-item .inner {
-  padding-bottom: 30px ;
+  padding-bottom: 10px ;
   border-bottom: 1px solid #ededed ;
 }
 #side .resume-item h2 {
   position: relative ;
-  top: -10px ;
+  top: 0px ;
   right: 50px ;
   z-index: 1 ;
   width: 240px ;
   height: 30px ;
-  padding: 0 30px ;
+  padding: 25px 30px 40px ;
   font-size: 24px ;
   text-align: left ;
   text-transform: capitalize ;
 }
 #side ul li {
   position: relative ;
-  margin: 0 0 10px ;
+  margin: 0 2.5px;
 }
 
-/* experience */
+/* education */
 .education h3 {
   font-size: 18px ;
 }
@@ -230,7 +294,8 @@ header .contact-container .contact-list li span {
 }
 .date2 {
   position: relative ;
-  top: -5px ;
+  top: -20px ;
+  right: -130px ;
   color: #bbb ;
   font-size: 12px ;
 }
@@ -242,3 +307,11 @@ header .contact-container .contact-list li span {
   text-decoration: underline;
 }
 
+@media print {
+  .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+}
+
+@page { 
+  size: auto;
+  margin: 20mm 0 10mm 0;
+}
